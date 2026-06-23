@@ -111,7 +111,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-1">
           {navItems.map((item) => {
             const isActive = activeSection === item.href;
             return (
@@ -159,7 +159,7 @@ export default function Header() {
         </nav>
 
         {/* Right side: CTA Button */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3">
           <a
             href="/Amith_Roshan_CV.pdf"
             download
@@ -178,7 +178,7 @@ export default function Header() {
         </div>
 
         {/* Mobile menu button */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-gray-400 hover:text-white focus:outline-none p-2 rounded-lg"
@@ -203,7 +203,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10, transition: { duration: 0.2 } }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="md:hidden absolute top-[62px] left-0 w-full px-4 pb-4"
+            className="lg:hidden absolute top-[62px] left-0 w-full px-4 pb-4"
           >
             <motion.div
               style={{
