@@ -82,8 +82,8 @@ export default function Header() {
       <div
         className="w-full max-w-7xl mx-auto h-[62px] flex items-center justify-between"
         style={{
-          paddingLeft: 'clamp(32px, 6vw, 64px)', 
-          paddingRight: 'clamp(32px, 6vw, 64px)'
+          paddingLeft: 'clamp(24px, 4vw, 48px)', 
+          paddingRight: 'clamp(24px, 4vw, 48px)'
         }}
       >
         {/* Logo */}
@@ -122,7 +122,7 @@ export default function Header() {
                 className="relative text-sm font-medium tracking-wide transition-all duration-300 select-none"
                 style={{
                   color: isActive ? '#fff' : 'rgba(148, 163, 184, 0.85)',
-                  padding: '6px 14px',
+                  padding: '6px clamp(8px, 1.2vw, 14px)',
                   borderRadius: '8px',
                   background: isActive
                     ? 'rgba(56, 189, 248, 0.1)'
