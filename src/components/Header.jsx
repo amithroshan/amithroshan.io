@@ -111,7 +111,13 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-1">
+        <nav 
+          className="hidden lg:flex absolute items-center gap-1"
+          style={{ 
+            left: '50%', 
+            transform: 'translateX(-50%)' 
+          }}
+        >
           {navItems.map((item) => {
             const isActive = activeSection === item.href;
             return (
