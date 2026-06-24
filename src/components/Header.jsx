@@ -80,10 +80,10 @@ export default function Header() {
       }}
     >
       <div
-        className="w-full max-w-7xl mx-auto h-[62px] flex items-center justify-between"
+        className="relative w-full h-[62px] flex items-center justify-between"
         style={{
-          paddingLeft: 'clamp(24px, 4vw, 48px)', 
-          paddingRight: 'clamp(24px, 4vw, 48px)'
+          paddingLeft: 'clamp(24px, 5vw, 80px)', 
+          paddingRight: 'clamp(24px, 5vw, 80px)'
         }}
       >
         {/* Logo */}
@@ -111,13 +111,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav 
-          className="hidden lg:flex absolute items-center gap-1"
-          style={{ 
-            left: '50%', 
-            transform: 'translateX(-50%)' 
-          }}
-        >
+        <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-1">
           {navItems.map((item) => {
             const isActive = activeSection === item.href;
             return (
